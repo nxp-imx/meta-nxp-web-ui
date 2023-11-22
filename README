@@ -1,0 +1,24 @@
+META LAYER for NXP WEB UI of ORANGEBOX
+============================================================================= 
+
+The following boards were tested in this release:
+
+- NXP i.MX Orangebox board.
+
+1.Introduction  
+-----------------
+ This layer is used to build the web based gui for Orangebox board. With the web based gui demo users have a new way to get information from the board and operate the board.Users want to try the web based gui demo need to add this layer to the Yocto image.
+ 	
+2.Steps to add to Yocto image  
+-----------------------------
+
+- Install meta-nxp-web-ui directory in the "sources" directory of your Yocto installation.  
+
+  
+- In your yocto's installation build folder,Add the following lines in conf/bblayers.conf:  
+  
+      BBLAYERS += "${BSPDIR}/sources/meta-nxp-web-ui"  
+
+- Users also need to add "meta-webserver" to conf/bblayers.conf file:  
+   
+      BBLAYERS += "${BSPDIR}/sources/meta-openembedded/meta-webserver" 

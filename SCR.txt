@@ -1,0 +1,20 @@
+--------------------------------------------
+Package:                   i.MX8DXL meta-nxp-web-ui release
+Version:                   v1.0
+Date:                      December 2023
+Outgoing License:          LA_OPT_NXP_Software_License v49 Sep 2023 - Additional distribution license granted - Section 2.3 applies
+License File:              LICENSE.txt
+Type of content:           Source code
+Description and comments:  Web UI for OrangeBox
+Release Location:          https://github.com/nxp-imx/meta-nxp-web-ui.git
+Origin:                    NXP
+
+--------------------------------------------
+file    :                    lighttpd.conf
+Outgoing License:            BSD-2-Clause
+License File:                LICENSE.BSD
+Package Category:            lighttpd.conf
+Type of Content:             source
+Release Location:            https://github.com/nxp-imx/meta-nxp-web-ui/recipes-connectivity/lighttpd/files/lighttpd.conf
+Origin:                      https://www.lighttpd.net
+--------------------------------------------
