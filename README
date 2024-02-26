@@ -17,8 +17,9 @@ The following boards were tested in this release:
   
 - In your yocto's installation build folder,Add the following lines in conf/bblayers.conf:  
   
-      BBLAYERS += "${BSPDIR}/sources/meta-nxp-web-ui"  
+      BBLAYERS += "${BSPDIR}/sources/meta-nxp-web-ui"
+      BBLAYERS += "${BSPDIR}/sources/meta-openembedded/meta-webserver"
 
-- Users also need to add "meta-webserver" to conf/bblayers.conf file:  
+- Users also need to add "web-ui" to conf/local.conf file:
    
-      BBLAYERS += "${BSPDIR}/sources/meta-openembedded/meta-webserver" 
+      DEMO_FEATURES += "web-ui"
