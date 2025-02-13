@@ -7,21 +7,8 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_FEATURES += " \
-    debug-tweaks \
-    tools-profile \
-    tools-sdk \
-    package-management \
-    splash \
+IMAGE_FEATURES:append = " \
     nfs-server \
-    tools-debug \
-    ssh-server-openssh \
-    hwcodecs \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'wayland', 'weston','', d)} \
-"
-
-SDKIMAGE_FEATURES:append = " \
-    staticdev-pkgs \
 "
 
 WEB_UI = " \
@@ -34,15 +21,7 @@ WEB_UI = " \
     web-ui \
 "
 
-IMAGE_INSTALL += " \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'x11 wayland', 'weston-xwayland xterm', '', d)} \
-    imx-test \
-    firmwared \
-    packagegroup-imx-core-tools \
-    packagegroup-imx-security \
-    curl \
-    ${CLINFO} \
-    ${DOCKER} \
+IMAGE_INSTALL:append = " \
     packagegroup-core-full-cmdline \
     packagegroup-tools-bluetooth \
     packagegroup-fsl-gstreamer1.0 \
@@ -54,12 +33,5 @@ IMAGE_INSTALL += " \
     connman connman-client\
     ${@bb.utils.contains('DEMO_FEATURES', 'web-ui', "${WEB_UI}", '', d)} \
 "
-
-CLINFO              ?= ""
-CLINFO:imxgpu        = "clinfo"
-
-DOCKER            ?= ""
-DOCKER:mx8-nxp-bsp = "docker"
-
 # export IMAGE_BASENAME = "imx-image-core-web-ui"
 
