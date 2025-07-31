@@ -12,7 +12,7 @@ SRCBRANCH = "master"
 SRC_URI = "git://github.com/nxp-imx/web_server.git;protocol=https;branch=${SRCBRANCH} \
 "
 
-SRCREV = "${AUTOREV}"
+SRCREV = "69298ea9b23a06bf50ecda9f387339ffb19ab90a"
 
 do_install() {
     install -d ${D}/www/pages/web_server
