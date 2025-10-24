@@ -16,7 +16,7 @@ SRCREV = "69298ea9b23a06bf50ecda9f387339ffb19ab90a"
 
 do_install() {
     install -d ${D}/www/pages/web_server
-    cp -r ${WORKDIR}/git/* ${D}/www/pages/web_server
+    cp -r ${WORKDIR}/web-ui-1.0/* ${D}/www/pages/web_server
 }
 
 FILES:${PN} += "/wwww/* /www/pages/* /www/pages/web_server/*"
