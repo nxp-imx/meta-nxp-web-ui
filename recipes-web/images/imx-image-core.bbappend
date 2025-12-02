@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright 2023 NXP
+# Copyright 2025 NXP
 
 DESCRIPTION = "NXP Image to demonstrate Camera in PoC"
 
