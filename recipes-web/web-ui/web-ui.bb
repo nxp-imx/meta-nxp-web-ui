@@ -13,6 +13,7 @@ SRC_URI = "git://github.com/nxp-imx/web_server.git;protocol=https;branch=${SRCBR
 "
 
 SRCREV = "d5bf5bf977b25024220aa716d258ded63a50d765"
+SRCREV:imx8dxl-orangebox = "69298ea9b23a06bf50ecda9f387339ffb19ab90a"
 
 S = "${WORKDIR}/sources"
 UNPACKDIR = "${S}"
