@@ -12,7 +12,7 @@ SRCBRANCH = "master"
 SRC_URI = "git://github.com/nxp-imx/web_server.git;protocol=https;branch=${SRCBRANCH} \
 "
 
-SRCREV = "0fa20e837a29ffd4d1badea78994e74e2fb223a7"
+SRCREV = "7a507d80996d419fccb57b5618ce92f2c869a603"
 SRCREV:imx8dxl-orangebox = "69298ea9b23a06bf50ecda9f387339ffb19ab90a"
 
 IMAGE_INSTALL += "openssl libssl-dev"
